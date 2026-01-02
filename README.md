@@ -10,7 +10,7 @@ This project solves the "Speed vs. Safety" paradox in financial simulations by e
 
 ## 📖 The Story Behind the Code
 I wrote a technical case study detailing the architectural decisions (Smart Pointers vs Raw Pointers) in this project:  
-👉 **[Read the Engineering Case Study](docs/Technical_Case_Study.md)** 
+👉 **Read on Medium:** [PROJECT AEGIS: Architecting a High-Frequency Backtesting System in Modern C++](https://medium.com/@katia-osorio/optimizing-for-latency-why-i-ditched-linked-lists-for-a-hybrid-c-architecture-77e14aeb64de)
 
 ## ⚡ Key Technical Features
 
