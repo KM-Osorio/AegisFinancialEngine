@@ -1,55 +1,120 @@
-# Project Aegis: High-Frequency Financial Backtesting Engine 🛡️
+# 🛡️ Project Aegis: High-Frequency Trading Backtester Engine
 
-![C++](https://img.shields.io/badge/Language-C%2B%2B20-blue)
-![Build](https://img.shields.io/badge/Build-CMake-green)
-![Status](https://img.shields.io/badge/Status-MVP-orange)
+![C++](https://img.shields.io/badge/C++-17-blue.svg?style=flat&logo=c%2B%2B)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat&logo=docker)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-A high-performance simulation engine engineered to audit **tiered investor portfolios** using **exclusive ownership semantics** and **zero-copy string parsing**.
+**A high-performance financial backtesting engine built in modern C++ (C++17) designed to simulate and analyze algorithmic trading strategies with historical market data.**
 
-This project solves the "Speed vs. Safety" paradox in financial simulations by enforcing manual memory management through RAII principles (Smart Pointers) instead of relying on garbage collection, preventing "double-spending" bugs and object slicing.
+This engine processes large datasets of OHLCV (Open, High, Low, Close, Volume) candles, manages multi-tiered user portfolios with dynamic commission structures, and generates detailed financial performance reports.
 
-## 📖 The Story Behind the Code
-I wrote a technical case study detailing the architectural decisions (Smart Pointers vs Raw Pointers) in this project:  
-👉 **Read on Medium:** [PROJECT AEGIS: Architecting a High-Frequency Backtesting System in Modern C++]([https://medium.com/@katia-osorio/optimizing-for-latency-why-i-ditched-linked-lists-for-a-hybrid-c-architecture-77e14aeb64de](https://katia-osorio.medium.com/ea4b619fd69a)
+---
 
-## ⚡ Key Technical Features
+## 🚀 Key Features
 
-### 1. Exclusive Ownership Architecture (`Wallet.h`)
-Standard vectors slice polymorphic objects. I implemented a strict ownership model using `std::unique_ptr`:
-* **Polymorphic Integrity:** Uses a factory pattern (`loadWallet`) to instantiate `Premium` vs `Standard` users dynamically without losing vtable data (commission rates).
-* **No "Double Spending":** The compiler forbids copying Wallet objects, ensuring that a user's financial state exists in exactly one memory address at any given time.
+* **⚡ High Performance:** Optimized for low latency using `std::string_view` for zero-copy string parsing and efficient memory management.
+* **🏗️ Solid Architecture:** Implements **RAII** principles and **Smart Pointers** (`std::unique_ptr`) for robust resource management and leak prevention.
+* **🧩 Polymorphic Wallet System:** Supports multiple user tiers (Premium, Pro, Standard) with distinct fee structures and commission logic using inheritance and polymorphism.
+* **📊 Financial Analytics:** Calculates real-time ROI (Return on Investment), PnL (Profit and Loss), and transaction metrics.
+* **🐳 Dockerized:** Fully containerized environment ensuring reproducibility and easy deployment across different platforms.
 
-### 2. Zero-Copy Data Ingestion (`Functions.cpp`)
-Parsing gigabytes of CSV logs creates massive heap allocation pressure.
-* **String Views:** Utilized `std::string_view` to create lightweight "windows" over the raw text buffer instead of allocating new `std::string` objects for every field.
-* **Optimized Tokenization:** Custom parsing logic that outperforms standard stream operators for structured financial data.
-
-### 3. O(1) Sliding Window Algorithm
-For the Moving Average Crossover strategy, standard vectors incur O(N) costs when shifting elements.
-* **Deque Implementation:** Replaced `std::vector` with `std::deque` for the signal buffer.
-* **Constant Time Complexity:** Allows **O(1)** insertion at the back and removal from the front, essential for high-frequency signal updates.
+---
 
 ## 🛠️ Tech Stack
-* **Language:** C++20 (Smart Pointers, String View, Deque, Inheritance).
-* **Build System:** CMake.
-* **Architecture:** Polymorphic Factory Pattern & Data-Oriented Design.
 
-## 🚀 How to Build and Run
+* **Language:** C++17
+* **Build System:** CMake
+* **Containerization:** Docker
+* **Paradigm:** Object-Oriented Programming (OOP)
+* **Data Format:** CSV (Comma-Separated Values) processing
 
-This project uses **CMake**. Ensure you have a C++ compiler (GCC/Clang/MSVC) installed.
+---
 
-```bash
-# 1. Clone the repository
-git clone [https://github.com/KM-Osorio/Project-Aegis.git](https://github.com/KM-Osorio/Project-Aegis.git)
-cd Project-Aegis
+## 📂 Project Structure
 
-# 2. Create build directory
-mkdir build
-cd build
+    AegisFinancialEngine/
+    ├── src/
+    │   ├── main.cpp         # Entry point of the simulation
+    │   ├── Wallet.cpp       # Implementation of wallet logic and trading execution
+    │   └── Functions.cpp    # Data parsing, file I/O, and report generation utilities
+    ├── include/
+    │   ├── Wallet.h         # Base class and derived classes (Premium, Pro, Standard)
+    │   ├── Types.h          # Data structures (Candle, UserData)
+    │   └── Utils.h          # Utility headers and dependencies
+    ├── data/
+    │   ├── Bitcoin Historical Data.csv  # Historical market data (OHLCV)
+    │   └── Users.csv                    # User portfolio configurations
+    ├── outputFiles/
+    │   └── monthlyReport.txt            # Generated performance report
+    ├── Dockerfile           # Container configuration
+    └── CMakeLists.txt       # Build configuration
 
-# 3. Configure and Build
-cmake ..
-cmake --build .
+---
 
-# 4. Run the simulation
-./Project_Aegis
+## ⚙️ How to Run
+
+### Option 1: Using Docker (Recommended)
+
+Ensure you have Docker installed. This method guarantees the environment matches the development setup.
+
+1.  **Build the image:**
+
+        docker build -t aegis .
+
+2.  **Run the container:**
+    (We mount the volume to retrieve the generated report)
+
+        docker run -v $(pwd)/outputFiles:/app/outputFiles aegis
+
+### Option 2: Manual Build (CMake)
+
+Requirements: C++ Compiler (GCC/Clang/MSVC) and CMake.
+
+    mkdir build
+    cd build
+    cmake ..
+    cmake --build .
+    ./CryptoBacktester
+
+---
+
+## 📊 Sample Output
+
+The engine generates a detailed report in `outputFiles/monthlyReport.txt`.
+
+  ===================================================================================================================
+                                                Performance Monthly Report
+    ===================================================================================================================
+     USER                                CATEGORY     INITIAL BALANCE    FINAL BALANCE      OPS      ROI       REVENUE
+    ===================================================================================================================
+     Larriega Velasquez Moises Roberto   Pro          $23326.62          $25029.25          10       7.30%     $592.73
+     Valverde Pinto Edilberto            Standard     $4986.02           $5217.86           10       4.65%     $250.23
+     Moscoso Laura Janet Valentina       Premium      $41935.70          $45905.62          10       9.47%     $215.28
+     ...                                 ...          ...                ...                ...      ...       ...
+    -------------------------------------------------------------------------------------------------------------------
+                                                      $1532109.96        $1665997.60        770                $18297.20
+    ===================================================================================================================
+     METRIC ANALYSIS
+           • Total Monthly Revenue: $18297.20 USD
+           • Total Operations: A total of 770 buy/sell transactions were executed
+           • Top Performer: The user Escalante Vergel Nestor Manuel achieved the highest margin with 9.47%
+    ===================================================================================================================
+
+---
+
+## 🧠 Design Decisions
+
+* **Why `std::unique_ptr`?** To handle the ownership of `Wallet` objects explicitly. Since wallets are unique to users and shouldn't be copied, unique pointers ensure safe memory deallocation without the overhead of garbage collection or manual `delete`.
+* **Why `std::string_view`?** In high-frequency trading simulations, parsing millions of lines of CSV data can be a bottleneck. `string_view` allows us to read and tokenize strings without creating expensive temporary copies.
+
+---
+
+## 👤 Author
+
+**Katia**
+* Computer Engineering Student at PUCP
+* [(https://www.linkedin.com/in/katia-osorio-dev/)]
+---
+
+**Disclaimer:** This project is for educational and simulation purposes only. It does not constitute financial advice.
