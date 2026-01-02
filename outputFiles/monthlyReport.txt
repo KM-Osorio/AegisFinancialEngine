@@ -1,0 +1,90 @@
+======================================================================================================================================================
+                                                      Performance Monthly Report
+======================================================================================================================================================
+    USER                                              CATEGORY            INITIAL BALANCE      FINAL BALANCE        OPS        ROI       REVENUE
+======================================================================================================================================================
+    Larriega Velasquez Moises Roberto                 Pro                 $23326.62            $25029.25            10        7.30%         $592.73
+    Valverde Pinto Edilberto                          Standard            $4986.02             $5217.86             10        4.65%         $250.23
+    Mori Tokeshi Alonso                               Standard            $1809.33             $1893.46             10        4.65%         $90.80
+    Cortez Leiva Surami Silvia                        Standard            $2005.61             $2098.87             10        4.65%         $100.65
+    De La Cuba Adria Quio                             Standard            $86.02               $90.02               10        4.65%         $4.32
+    Lee Vasquez Jenny                                 Standard            $2946.29             $3083.29             10        4.65%         $147.86
+    Chavez Prado Silvana                              Pro                 $27260.70            $29250.49            10        7.30%         $692.70
+    Fuentes Gamarra Hugo                              Standard            $1858.25             $1944.66             10        4.65%         $93.26
+    Cerna Pairazaman Fiorella Margot                  Pro                 $9326.33             $10007.07            10        7.30%         $236.98
+    Guevara Miyake Milena                             Standard            $71.88               $75.22               10        4.65%         $3.61
+    Vega Garcia Janet Rebeca                          Standard            $603.37              $631.43              10        4.65%         $30.28
+    Chang Zuniga Glenda                               Pro                 $19615.92            $21047.71            10        7.30%         $498.44
+    Lovera Iberos Raul Alvaro                         Pro                 $6389.29             $6855.65             10        7.30%         $162.35
+    Moscoso Laura Janet Valentina                     Premium             $41935.70            $45905.62            10        9.47%         $215.28
+    Durand Lopez Emigdio                              Standard            $4432.29             $4638.38             10        4.65%         $222.44
+    Vilca Justino Melvin                              Premium             $83910.99            $91854.58            10        9.47%         $430.77
+    Martinez Cruz Evert Rony                          Standard            $3940.89             $4124.14             10        4.65%         $197.78
+    Mercado Quiroga Christian                         Pro                 $8991.19             $9647.47             10        7.30%         $228.47
+    Yino Avila Angel Edgar                            Pro                 $21745.81            $23333.06            10        7.30%         $552.56
+    Fuentes Lopez Nestor Fausto                       Premium             $33505.57            $36677.44            10        9.47%         $172.00
+    Diaz Moya Elia Annie                              Premium             $30476.80            $33361.94            10        9.47%         $156.46
+    Saona Arias Alberto                               Pro                 $5662.94             $6076.28             10        7.30%         $143.90
+    Pena Suarez Glenda Margot                         Standard            $442.14              $462.70              10        4.65%         $22.19
+    Escalante Raraz Blanca                            Pro                 $24164.31            $25928.09            10        7.30%         $614.02
+    Perez Farfan Richard Sandro                       Standard            $4150.80             $4343.81             10        4.65%         $208.31
+    Ruiz Gordillo Carola Erika                        Standard            $3432.96             $3592.59             10        4.65%         $172.28
+    Zavaleta Vilca Ericka Eleonor                     Standard            $4279.52             $4478.51             10        4.65%         $214.77
+    Yino Figueroa Magda Karina                        Premium             $48834.16            $53457.14            10        9.47%         $250.70
+    Sedano Iberos Jair                                Premium             $63118.66            $69093.91            10        9.47%         $324.03
+    Benavente Ayala Virginia Irma                     Premium             $65340.83            $71526.45            10        9.47%         $335.43
+    Corrales Escalante Eloisa Yliana                  Pro                 $7706.91             $8269.45             10        7.30%         $195.83
+    Ayala Castillo Ericka Ofelia                      Premium             $86894.95            $95121.03            10        9.47%         $446.08
+    Gamarra Chavarri Zkenia                           Standard            $370.59              $387.82              10        4.65%         $18.60
+    Shirakawa Ortega Angel                            Standard            $3438.79             $3598.69             10        4.65%         $172.58
+    Justino Martinez Enrique                          Premium             $39155.37            $42862.09            10        9.47%         $201.01
+    Sueldo Perez Diana Glenda                         Standard            $1241.14             $1298.85             10        4.65%         $62.29
+    Suchero Aguirre Adolfo                            Premium             $71544.39            $78317.28            10        9.47%         $367.28
+    Gamarra Tabori Paul Ronal                         Pro                 $15034.81            $16132.22            10        7.30%         $382.04
+    Egusquiza Soma Jessica                            Premium             $39164.46            $42872.04            10        9.47%         $201.05
+    Ayala Farfan Luz Rebeca                           Pro                 $18581.46            $19937.74            10        7.30%         $472.16
+    Rosemberg Rosemberg Jair Alonso                   Standard            $3674.26             $3845.11             10        4.65%         $184.39
+    Norabuena Yep Henrry                              Premium             $78798.63            $86258.25            10        9.47%         $404.52
+    La Haza Cabrera Alberto De                        Standard            $178.13              $186.41              10        4.65%         $8.94
+    Solis Vilca Julian                                Premium             $85016.26            $93064.49            10        9.47%         $436.44
+    Lam Toro Alex                                     Premium             $47468.40            $51962.09            10        9.47%         $243.68
+    Quiroga Laura Annie                               Pro                 $23028.71            $24709.60            10        7.30%         $585.16
+    Cortez Segura Carmela Ines                        Pro                 $7441.80             $7984.98             10        7.30%         $189.10
+    Trigueros Portugal Arturo Fausto                  Pro                 $5883.71             $6313.17             10        7.30%         $149.51
+    Escalante Vergel Nestor Manuel                    Premium             $42661.39            $46700.01            10        9.47%         $219.01
+    Cabello Santisteban Marina Valentina              Standard            $517.92              $542.00              10        4.65%         $25.99
+    Aranda Torrealba Jenny Ines                       Standard            $2010.41             $2103.89             10        4.65%         $100.89
+    Saavedra Contreras Rony Johan                     Pro                 $8210.41             $8809.70             10        7.30%         $208.63
+    Guevara Yoshinari Magda Carmela                   Premium             $33877.54            $37084.62            10        9.47%         $173.91
+    Villa Yallico Tatiana Nancy                       Standard            $2388.82             $2499.90             10        4.65%         $119.88
+    Chumpitaz Alcocer Angel Erick                     Pro                 $5484.05             $5884.34             10        7.30%         $139.35
+    Montero Montero Annie                             Standard            $2296.11             $2402.88             10        4.65%         $115.23
+    Zuniga Rivero Nicolas                             Pro                 $8145.94             $8740.52             10        7.30%         $206.99
+    Yino Pena Zkenia Surami                           Standard            $2439.90             $2553.35             10        4.65%         $122.45
+    Norabuena Pairazaman Julian                       Pro                 $16922.85            $18158.07            10        7.30%         $430.01
+    Merel Arca Silvana                                Pro                 $26882.31            $28844.48            10        7.30%         $683.08
+    Torrealba Salazar Ronal Evert                     Standard            $4408.11             $4613.08             10        4.65%         $221.22
+    Wong Martel Madeleine                             Pro                 $9162.67             $9831.46             10        7.30%         $232.82
+    Retamoso Tokeshi Gustavo                          Standard            $2969.93             $3108.03             10        4.65%         $149.05
+    Suarez Morales Amaru                              Pro                 $6931.10             $7437.01             10        7.30%         $176.12
+    Serrano Iberos Francisco                          Standard            $3464.11             $3625.19             10        4.65%         $173.85
+    Egusquiza Berrocal Doris Nancy                    Pro                 $6968.11             $7476.72             10        7.30%         $177.06
+    Diaz Tang Enrique                                 Pro                 $8760.66             $9400.11             10        7.30%         $222.61
+    Benites Tsukazan Luz Lourdes                      Premium             $97033.55            $106219.42           10        9.47%         $498.13
+    Amezquita Epiquen Evert Roberto                   Standard            $3322.31             $3476.79             10        4.65%         $166.73
+    Paredes Epiquen Israel Martin                     Standard            $4538.10             $4749.11             10        4.65%         $227.75
+    Landeo Acuna Karina                               Standard            $1416.26             $1482.11             10        4.65%         $71.08
+    Vasquez Shirakawa Julian Alfonso                  Pro                 $18911.51            $20291.88            10        7.30%         $480.54
+    Zarate Perez Alexander                            Pro                 $5632.71             $6043.85             10        7.30%         $143.13
+    Cuba Narvaez Paul John                            Premium             $32024.11            $35055.73            10        9.47%         $164.40
+    Miranda Huayanay Rhony                            Premium             $35985.26            $39391.87            10        9.47%         $184.73
+    Malca Saavedra Doris Milagros                     Standard            $2032.02             $2126.51             10        4.65%         $101.98
+    Zegarra Yino Rebeca                               Premium             $53437.83            $58496.62            10        9.47%         $274.33
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                          $1532109.96          $1665997.60          770                     $18297.20
+======================================================================================================================================================
+    METRIC ANALYSIS
+          • Total Monthly Revenue: $18297.20 USD
+          • Total Operations: A total of 770 buy/sell transactions were executed
+          • Top Performer: The user Escalante Vergel Nestor Manuel achieved the highest margin with 9.47%
+======================================================================================================================================================
