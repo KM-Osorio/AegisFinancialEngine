@@ -1,0 +1,54 @@
+# ==========================
+# 1. Build Artifacts (Binarios)
+# ==========================
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Object files
+*.o
+*.obj
+
+# ==========================
+# 2. Build Systems (CMake)
+# ==========================
+# Carpetas de build típicas de CLion
+cmake-build-*/
+# Carpeta de build manual estándar
+build/
+bin/
+lib/
+
+# Archivos generados por CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+compile_commands.json
+
+# ==========================
+# 3. IDE & System Configs (¡Privado!)
+# ==========================
+# JetBrains (CLion)
+.idea/
+# VS Code
+.vscode/
+# Mac OS junk
+.DS_Store
+
+# ==========================
+# 4. Project Aegis Specifics
+# ==========================
+# Ignorar los reportes generados (el código los crea, no tú)
+outputFiles/
+monthlyReport.txt
+
+# Ignorar Datasets masivos (CSV)
+# Tip Senior: El código vive en Git, los datos viven en S3/Drive/Local
+data/*.csv
+
+# (Opcional) Si quieres subir un CSV de ejemplo pequeño, descomenta abajo:
+# !data/sample_users.csv
