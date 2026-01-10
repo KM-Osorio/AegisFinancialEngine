@@ -1,4 +1,4 @@
-# SOLID Principles Implementation in Project Aegis
+# Architecture
 
 This project was designed following Clean Architecture and SOLID principles to ensure scalability, strict type safety, and memory integrity.
 
