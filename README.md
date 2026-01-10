@@ -2,19 +2,23 @@
 
 ![C++](https://img.shields.io/badge/C++-17-blue.svg?style=flat&logo=c%2B%2B)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat&logo=docker)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![Status](https://img.shields.io/badge/Status-Prototype-orange)
 
 **A high-performance financial backtesting engine built in modern C++ (C++17) designed to simulate and analyze algorithmic trading strategies with historical market data.**
 
 This engine processes large datasets of OHLCV (Open, High, Low, Close, Volume) candles, manages multi-tiered user portfolios with dynamic commission structures, and generates detailed financial performance reports.
 
 ---
+## 📖 The Story Behind the Code
+I wrote an article detailing the engineering challenges and optimizations in this project:  
+👉 **[Read on Medium: 4 Ways I Sabotaged My High-Performance C++ Engine](https://medium.com/@katia-osorio/881e98626225)**
+
+---
 
 ## 🚀 Key Features
 
 * **⚡ High Performance:** Optimized for low latency using `std::string_view` for zero-copy string parsing and efficient memory management.
-* **🏗️ Solid Architecture:** Implements **RAII** principles and **Smart Pointers** (`std::unique_ptr`) for robust resource management and leak prevention.
+* **🏗️ Architecture:** Implements **RAII** principles and **Smart Pointers** (`std::unique_ptr`) for robust resource management and leak prevention.
 * **🧩 Polymorphic Wallet System:** Supports multiple user tiers (Premium, Pro, Standard) with distinct fee structures and commission logic using inheritance and polymorphism.
 * **📊 Financial Analytics:** Calculates real-time ROI (Return on Investment), PnL (Profit and Loss), and transaction metrics.
 * **🐳 Dockerized:** Fully containerized environment ensuring reproducibility and easy deployment across different platforms.
@@ -53,21 +57,7 @@ This engine processes large datasets of OHLCV (Open, High, Low, Close, Volume) c
 ---
 
 ## ⚙️ How to Run
-
-### Option 1: Using Docker (Recommended)
-
-Ensure you have Docker installed. This method guarantees the environment matches the development setup.
-
-1.  **Build the image:**
-
-        docker build -t aegis .
-
-2.  **Run the container:**
-    (We mount the volume to retrieve the generated report)
-
-        docker run -v $(pwd)/outputFiles:/app/outputFiles aegis
-
-### Option 2: Manual Build (CMake)
+### Manual Build (CMake)
 
 Requirements: C++ Compiler (GCC/Clang/MSVC) and CMake.
 
@@ -75,7 +65,7 @@ Requirements: C++ Compiler (GCC/Clang/MSVC) and CMake.
     cd build
     cmake ..
     cmake --build .
-    ./CryptoBacktester
+    ./AegisFinancialEngine
 
 ---
 
